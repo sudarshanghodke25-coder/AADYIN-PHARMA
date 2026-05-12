@@ -1048,12 +1048,15 @@ footer::before {
   .about-inner, .contact-inner { grid-template-columns: 1fr; gap: 60px; }
   .about-badge { display: none; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
-  .hero h1 { font-size: clamp(50px, 12vw, 80px); }
+  .hero h1 { font-size: clamp(40px, 10vw, 80px); }
   .hero-bottom-bar { position: relative; flex-direction: column; gap: 32px; padding: 32px 5%; border-top: none; background: transparent; backdrop-filter: none; }
   .hero-stats { flex-wrap: wrap; justify-content: center; }
 }
+
 @media(max-width: 768px) {
-  nav { padding: 12px 20px; width: 95%; }
+  nav { padding: 10px 15px; width: 92%; top: 10px; }
+  .logo-icon { width: 36px; height: 36px; font-size: 16px; }
+  .logo-text span:first-child { font-size: 18px; }
   
   .menu-toggle { display: flex; }
   
@@ -1062,49 +1065,72 @@ footer::before {
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(5, 5, 5, 0.95);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(2, 9, 20, 0.98);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     flex-direction: column;
     align-items: center;
     padding: 30px 0;
-    gap: 20px;
-    border-radius: 20px;
+    gap: 15px;
+    border-radius: 24px;
     border: 1px solid var(--border-light);
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s ease;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
   }
   
   nav ul.active {
-    transform: translateY(10px);
+    transform: translateY(15px);
     opacity: 1;
     visibility: visible;
   }
   
-  nav ul li a { font-size: 18px; }
+  nav ul li a { font-size: 16px; padding: 12px 25px; width: 80%; text-align: center; }
+  .nav-cta { width: 80% !important; text-align: center; }
 
-  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero { padding: 140px 5% 60px; }
+  .hero h1 { font-size: clamp(36px, 12vw, 56px); letter-spacing: -1px; }
+  .hero p { margin-bottom: 32px; padding: 0 10px; }
+  .hero-actions { flex-direction: column; width: 100%; gap: 15px; }
+  .hero-actions a { width: 100%; justify-content: center; }
+  
+  .hero-stats { gap: 20px; }
+  .stat-item { flex-direction: column; gap: 8px; text-align: center; }
+  .stat-item .num { font-size: 28px; }
+  .stat-item .label { font-size: 9px; max-width: none; }
+  .stat-item.separator { display: none; }
+
+  .section-header { margin-bottom: 50px; }
+  .section-header h2 { font-size: 32px; }
+  
+  .feature-card { padding: 30px; min-height: auto; }
+  
+  .product-grid { grid-template-columns: 1fr; gap: 24px; }
+  .product-img-wrap { height: 260px; padding: 20px; }
+  .product-body h3 { font-size: 24px; }
+  
+  .about { padding: 80px 5%; }
+  .about-text h2 { font-size: 32px; }
+  .about-points li { font-size: 14px; padding: 12px 0; }
+  
+  .contact { padding: 80px 5%; }
+  .contact-info h2 { font-size: 32px; }
+  .contact-inner { gap: 40px; }
+  .contact-form { padding: 30px 20px; }
+  .contact-form h3 { font-size: 24px; }
+  .c-item { padding: 16px; }
+  
+  .footer-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .f-brand p { margin-left: auto; margin-right: auto; }
   .f-bottom { flex-direction: column; gap: 16px; text-align: center; }
-  .contact-form { 
-  padding: 48px; 
-  background: rgba(3, 27, 58, 0.4);
-  border: 1px solid rgba(0, 208, 132, 0.2);
-  border-radius: 30px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 0 40px rgba(0, 208, 132, 0.02);
-  position: relative;
 }
-.contact-form::before {
-  content: '';
-  position: absolute;
-  top: -2px; left: -2px; right: -2px; bottom: -2px;
-  background: linear-gradient(135deg, var(--accent-1), transparent, var(--accent-2));
-  border-radius: 32px;
-  z-index: -1;
-  opacity: 0.15;
-}
+
+@media(max-width: 480px) {
+  .hero h1 { font-size: 32px; }
+  .hero-stats { grid-template-columns: 1fr 1fr; display: grid; width: 100%; }
+  .stat-item { padding: 15px; background: rgba(255,255,255,0.03); border-radius: 15px; }
 }
 </style>
 </head>
