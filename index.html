@@ -562,11 +562,131 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
       .eq-box { padding:40px 24px 32px; }
       .eq-email-text { font-size:13px; }
     }
+    /* ===== BRAND FILTER TABS ===== */
+    .brand-tabs {
+      display: flex; gap: 12px; justify-content: center;
+      margin-bottom: 60px; flex-wrap: wrap;
+    }
+    .brand-tab {
+      padding: 12px 32px;
+      background: rgba(0,208,132,0.05);
+      border: 1.5px solid rgba(0,208,132,0.2);
+      border-radius: 100px;
+      color: #475569; font-family: var(--font-head); font-weight: 700;
+      font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;
+      cursor: pointer; transition: all 0.35s ease;
+    }
+    .brand-tab:hover { background: rgba(0,208,132,0.12); color: #00A86B; border-color: rgba(0,208,132,0.5); }
+    .brand-tab.active { background: #021B3A; color: #ffffff; border-color: #00A86B; box-shadow: 0 0 20px rgba(0,168,107,0.2); }
+
+    /* ===== BRAND SECTION HEADERS ===== */
+    .brand-section { margin-bottom: 80px; }
+    .brand-header-block { margin-bottom: 40px; }
+    .brand-badge-wrap { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; }
+    .brand-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 8px 22px; border-radius: 100px;
+      font-family: var(--font-head); font-weight: 900; font-size: 18px;
+      letter-spacing: 2px; text-transform: uppercase;
+    }
+    .ozn-badge { background: linear-gradient(135deg, #021B3A, #043266); color: #00D084; border: 2px solid #00D084; box-shadow: 0 0 18px rgba(0,208,132,0.25); }
+    .puretech-badge { background: linear-gradient(135deg, #1a0233, #2e0550); color: #c084fc; border: 2px solid #a855f7; box-shadow: 0 0 18px rgba(168,85,247,0.25); }
+    .brand-section-name { font-family: var(--font-head); font-weight: 800; font-size: 22px; color: #021B3A; }
+    .brand-section-tagline { font-size: 13px; color: #64748b; font-weight: 500; letter-spacing: 1px; }
+    .brand-divider-line { height: 3px; border-radius: 10px; background: linear-gradient(90deg, #00D084, #00A86B, transparent); }
+    .puretech-line { background: linear-gradient(90deg, #a855f7, #7c3aed, transparent); }
+
+    /* ===== ABOUT FULL WIDTH ===== */
+    .about-full .about-text { max-width: 860px; margin: 0 auto; }
+    .about-vision-box {
+      background: rgba(0,208,132,0.05); border: 1px solid rgba(0,208,132,0.2);
+      border-radius: 20px; padding: 28px 32px; margin: 28px 0;
+    }
+    .about-quote {
+      font-family: var(--font-head); font-size: 20px; font-weight: 700;
+      color: var(--accent-2); border-left: 4px solid var(--accent-1);
+      padding-left: 20px; margin: 16px 0; font-style: italic;
+    }
+    .about-pillars {
+      display: flex; gap: 16px; flex-wrap: wrap; margin: 28px 0;
+    }
+    .pillar-item {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(0,208,132,0.08); border: 1px solid rgba(0,208,132,0.25);
+      border-radius: 100px; padding: 10px 20px;
+      font-family: var(--font-head); font-weight: 700; font-size: 15px; color: var(--text-main);
+    }
+    .pillar-icon { font-size: 20px; }
+    .about-motto {
+      font-family: var(--font-teko); font-size: 32px; font-weight: 700;
+      color: var(--accent-1); text-shadow: 0 0 20px rgba(0,208,132,0.35);
+      letter-spacing: 2px; text-transform: uppercase; margin: 8px 0 28px;
+    }
+
+    /* Brand section hidden for filtering */
+    .brand-section.hidden { display: none; }
+
     @media(max-width:480px) {
       .hero-content h1 { font-size: clamp(40px, 13vw, 64px); }
       .hero-stats { grid-template-columns:1fr 1fr; display:grid; width:100%; }
       .stat-item { padding:15px; background:rgba(255,255,255,0.03); border-radius:15px; }
     }
+	.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+text-decoration:none;
+}
+
+.logo-name{
+
+display:flex;
+
+flex-direction:column;
+
+line-height:1;
+}
+
+.logo-main{
+
+font-family:var(--font-teko);
+
+font-size:42px;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+color:#ffffff;
+
+text-transform:uppercase;
+
+line-height:0.9;
+
+text-shadow:
+0 0 20px rgba(255,255,255,0.15);
+}
+
+.logo-sub{
+
+font-family:var(--font-head);
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:5px;
+
+color:#00D084;
+
+text-transform:uppercase;
+
+margin-top:4px;
+}
   </style>
 </head>
 
@@ -584,13 +704,29 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
   <a href="mailto:info@aadyinpharma.com" class="float-wa" target="_blank">💬</a>
 
   <nav id="navbar" class="glass-panel">
-    <a href="#home" class="logo">
-      <div class="logo-icon">💊</div>
-      <div class="logo-text">
-        <span>AADYIN PHARMA</span>
-        <span>Elite Performance</span>
-      </div>
-    </a>
+   <a href="#home" class="logo">
+
+<img src="logo.jpeg" alt="AADYIN PHARMA"
+style="
+height:75px;
+width:75px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #00D084;
+box-shadow:0 0 25px rgba(0,208,132,0.45);
+background:#fff;
+padding:4px;
+">
+
+<div class="logo-name">
+
+<span class="logo-main">AADYIN PHARMA</span>
+
+<span class="logo-sub">Elite Performance</span>
+
+</div>
+
+</a>
     <div class="menu-toggle" id="mobile-menu">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -683,7 +819,26 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
       <p>Premium anabolic compounds and performance ingredients for serious results.</p>
     </div>
 
-    <div class="product-grid" id="card-container">
+    <!-- Brand Filter Tabs -->
+    <div class="brand-tabs" id="brand-tabs">
+      <button class="brand-tab active" onclick="filterBrand('all')">🏅 All Products</button>
+      <button class="brand-tab" onclick="filterBrand('ozn')">OZN</button>
+      <button class="brand-tab" onclick="filterBrand('puretech')">PureTech</button>
+    </div>
+
+    <!-- OZN Brand Section -->
+    <div class="brand-section" id="brand-ozn">
+      <div class="brand-header-block">
+        <div class="brand-badge-wrap">
+          <span class="brand-badge ozn-badge">OZN</span>
+          <div>
+            <div class="brand-section-name">OZN Supplements</div>
+            <div class="brand-section-tagline">Premium Gym &amp; Performance Nutrition</div>
+          </div>
+        </div>
+        <div class="brand-divider-line"></div>
+      </div>
+      <div class="product-grid" id="card-container-ozn">
 
       <div class="product-card">
         <div class="product-img-wrap"><img src="images/whey-protein.png" alt="Whey Protein"></div>
@@ -871,6 +1026,23 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
           <button class="btn-outline" onclick="openEnquireModal('TRT')" type="button">Enquire Now</button>
         </div>
       </div>
+
+      </div><!-- end OZN product-grid -->
+    </div><!-- end brand-ozn -->
+
+    <!-- PureTech Brand Section -->
+    <div class="brand-section" id="brand-puretech">
+      <div class="brand-header-block">
+        <div class="brand-badge-wrap">
+          <span class="brand-badge puretech-badge">PureTech</span>
+          <div>
+            <div class="brand-section-name">PureTech Pharma</div>
+            <div class="brand-section-tagline">Elite Pharmaceutical Grade Compounds</div>
+          </div>
+        </div>
+        <div class="brand-divider-line puretech-line"></div>
+      </div>
+      <div class="product-grid" id="card-container-puretech">
 
       <div class="product-card">
         <div class="product-img-wrap"><img src="images/puretech/page_10_nobg.png" alt="Winni-Tech"></div>
@@ -1101,35 +1273,65 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
           <div class="product-benefits"><span class="benefit-tag">Keepable Gains</span><span class="benefit-tag">Zero Estrogen</span></div>
           <button class="btn-outline" onclick="openEnquireModal('Turinabol')" type="button">Enquire Now</button>
         </div>
-      </div>
-
-    </div>
+      </div><!-- end PureTech product-grid -->
+    </div><!-- end brand-puretech -->
   </section>
 
   <div class="section-divider"></div>
 
   <!-- ===== ABOUT ===== -->
   <section class="about" id="about">
-    <div class="about-inner">
+    <div class="about-inner about-full">
       <div class="about-text">
         <div class="section-tag">Our Story</div>
         <h2>ABOUT <br><span class="accent-text">AADYIN</span><br>PHARMA</h2>
-        <p>AADYIN PHARMA is a premium gym lifestyle and performance brand dedicated to delivering the highest quality products for athletes and bodybuilders across India.</p>
-        <p>We combine cutting-edge pharmaceutical science with hardcore fitness culture to create compounds that deliver real, visible results — trusted by hundreds of serious athletes.</p>
+
+        <p>We do not promote or sell products from just one company. Instead, we give the highest importance to <strong style="color:var(--accent-1)">100% Purity, Quality, Performance, and Authenticity.</strong></p>
+
+        <p>In today's market, many products are available, but not every product delivers the same level of quality, purity, and results. That is why we carefully conduct Market Research, Product Analysis, Customer Feedback evaluation, and Performance studies before listing only the Best of the Best Brands on our website.</p>
+
+        <p style="font-family:var(--font-head);font-weight:700;font-size:16px;color:var(--accent-2);margin-bottom:8px;">Our main objective is to provide customers with:</p>
         <ul class="about-points">
-          <li><div class="point-icon">✓</div>10+ years in the performance supplement industry</li>
-          <li><div class="point-icon">✓</div>Pharmaceutical-grade raw materials, strictly sourced</li>
-          <li><div class="point-icon">✓</div>Expert guidance from certified fitness professionals</li>
-          <li><div class="point-icon">✓</div>500+ satisfied athletes and bodybuilders</li>
+          <li><div class="point-icon">✓</div>Genuine &amp; Trusted Products</li>
+          <li><div class="point-icon">✓</div>Premium Quality Supplements</li>
+          <li><div class="point-icon">✓</div>Better Results &amp; Performance</li>
+          <li><div class="point-icon">✓</div>Affordable Pricing</li>
+          <li><div class="point-icon">✓</div>Safe &amp; Reliable Brands</li>
+          <li><div class="point-icon">✓</div>Fast &amp; Trusted Service</li>
+          <li><div class="point-icon">✓</div>Professional Customer Support</li>
         </ul>
-        <a href="mailto:info@aadyinpharma.com" class="btn-primary" target="_blank">Talk to an Expert</a>
-      </div>
-      <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop" alt="Gym">
-        <div class="about-badge">
-          <div class="big">10+</div>
-          <div class="small">Years of<br>Excellence</div>
+        <p style="color:var(--text-muted);font-style:italic;margin-bottom:20px;">—all in one place.</p>
+
+        <p>At AADYIN PHARMA, we do not just sell products; we focus on <strong style="color:var(--accent-1)">building customer trust, satisfaction, and long-term relationships.</strong></p>
+
+        <p>We work to deliver selected high-quality products required for Fitness, Gym, Athletics, and Sports Performance to our customers. While selecting every product, we prioritize: <em>Purity, Effectiveness, Market Reputation, Quality Testing, and Customer Satisfaction.</em></p>
+
+        <p>We believe that with the right quality products and proper guidance, every individual can achieve their best performance. Therefore, we focus not only on sales but also on proper product selection and customer support.</p>
+
+        <p>Our team continuously studies new market trends, advanced formulations, and trusted international standards to ensure customers always receive updated and premium-quality products.</p>
+
+        <p>In today's competitive market, finding genuine and original products is extremely important. That is why we strive to provide customers with the most reliable and tested brands possible.</p>
+
+        <div class="about-vision-box">
+          <p>Our goal is not just to grow a business, but to build a strong brand community based on <strong style="color:var(--accent-2)">Quality and Trust.</strong></p>
+          <blockquote class="about-quote">"Strong Body, Strong Mind, and Strong Performance require proper Nutrition."</blockquote>
+          <p>That is why AADYIN PHARMA aims to become a trusted partner for every athlete, fitness lover, and performance-driven individual.</p>
         </div>
+
+        <p>In every service we provide, <strong style="color:var(--accent-1)">Professionalism, Transparency, and Customer Satisfaction</strong> are given the highest priority.</p>
+
+        <p>Our vision is to develop AADYIN PHARMA into one of India's most trusted and premium supplement platforms. We do not consider every customer as just a buyer, but as an important part of our brand family.</p>
+
+        <div class="about-pillars">
+          <div class="pillar-item"><span class="pillar-icon">🔍</span><span>Transparency</span></div>
+          <div class="pillar-item"><span class="pillar-icon">🤝</span><span>Trust</span></div>
+          <div class="pillar-item"><span class="pillar-icon">🏆</span><span>Quality</span></div>
+        </div>
+
+        <p>Today, many customers trust AADYIN PHARMA because we work with the principle of:</p>
+        <p class="about-motto">"No Compromise in Quality"</p>
+
+        <a href="mailto:info@aadyinpharma.com" class="btn-primary" target="_blank">Talk to an Expert</a>
       </div>
     </div>
   </section>
@@ -1222,8 +1424,7 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
     <div class="footer-inner">
       <div class="f-brand">
         <a href="#home" class="logo">
-          <div class="logo-icon">💊</div>
-          <div class="logo-text"><span>AADYIN PHARMA</span><span>Elite Performance</span></div>
+          <img src="logo.jpeg" alt="AADYIN PHARMA" style="height:52px;width:auto;border-radius:8px;object-fit:contain;">
         </a>
         <p>Premium pharmaceutical-grade gym supplements and performance ingredients for serious athletes across India.</p>
       </div>
@@ -1401,8 +1602,15 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
     if (heroAccent) setInterval(() => { heroAccent.classList.add('glitch-active'); setTimeout(() => heroAccent.classList.remove('glitch-active'), 400); }, 5000);
 
     // ===== MOUSE LIGHT =====
-    document.getElementById('card-container').onmousemove = e => {
-      for (const card of document.getElementsByClassName('product-card')) {
+    document.getElementById('card-container-ozn').onmousemove = e => {
+      for (const card of document.getElementById('card-container-ozn').getElementsByClassName('product-card')) {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
+        card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
+      }
+    };
+    document.getElementById('card-container-puretech').onmousemove = e => {
+      for (const card of document.getElementById('card-container-puretech').getElementsByClassName('product-card')) {
         const r = card.getBoundingClientRect();
         card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
         card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
@@ -1450,16 +1658,18 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
         setTimeout(() => { btn.classList.remove('copied'); lbl.textContent = 'Copy'; }, 2000);
       });
     }
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeEnquireModal(null, true); });
+    // ===== BRAND FILTER =====
+    function filterBrand(brand) {
+      document.querySelectorAll('.brand-tab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+      const ozn = document.getElementById('brand-ozn');
+      const pt  = document.getElementById('brand-puretech');
+      if (brand === 'all') { ozn.classList.remove('hidden'); pt.classList.remove('hidden'); }
+      else if (brand === 'ozn') { ozn.classList.remove('hidden'); pt.classList.add('hidden'); }
+      else if (brand === 'puretech') { ozn.classList.add('hidden'); pt.classList.remove('hidden'); }
+    }
 
-    // Visitor count (after DOM is ready)
-    fetch('https://api.countapi.xyz/hit/aadyinpharma/visits')
-      .then(r => r.json())
-      .then(data => {
-        const el = document.getElementById('visitor-count');
-        if (el && data && typeof data.value !== 'undefined') el.textContent = data.value + '+';
-      })
-      .catch(() => {});
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeEnquireModal(null, true); });
   </script>
 
 </body>
