@@ -563,158 +563,67 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
       .eq-box { padding:40px 24px 32px; }
       .eq-email-text { font-size:13px; }
     }
-    /* ===== BRAND FILTER TABS ===== */
-    .brand-tabs {
-      display: flex; gap: 12px; justify-content: center;
-      margin-bottom: 60px; flex-wrap: wrap;
-    }
-    .brand-tab {
-      padding: 12px 32px;
-      background: rgba(0,208,132,0.05);
-      border: 1.5px solid rgba(0,208,132,0.2);
-      border-radius: 100px;
-      color: #475569; font-family: var(--font-head); font-weight: 700;
-      font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;
-      cursor: pointer; transition: all 0.35s ease;
-    }
-    .brand-tab:hover { background: rgba(0,208,132,0.12); color: #00A86B; border-color: rgba(0,208,132,0.5); }
-    .brand-tab.active { background: #021B3A; color: #ffffff; border-color: #00A86B; box-shadow: 0 0 20px rgba(0,168,107,0.2); }
-
-    /* ===== BRAND SECTION HEADERS ===== */
-    .brand-section { margin-bottom: 80px; }
-    .brand-header-block { margin-bottom: 40px; }
-    .brand-badge-wrap { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; }
-    .brand-badge {
-      display: inline-flex; align-items: center; justify-content: center;
-      padding: 8px 22px; border-radius: 100px;
-      font-family: var(--font-head); font-weight: 900; font-size: 18px;
-      letter-spacing: 2px; text-transform: uppercase;
-    }
-    .ozn-badge { background: linear-gradient(135deg, #021B3A, #043266); color: #00D084; border: 2px solid #00D084; box-shadow: 0 0 18px rgba(0,208,132,0.25); }
-    .puretech-badge { background: linear-gradient(135deg, #1a0233, #2e0550); color: #c084fc; border: 2px solid #a855f7; box-shadow: 0 0 18px rgba(168,85,247,0.25); }
-    .brand-section-name { font-family: var(--font-head); font-weight: 800; font-size: 22px; color: #021B3A; }
-    .brand-section-tagline { font-size: 13px; color: #64748b; font-weight: 500; letter-spacing: 1px; }
-    .brand-divider-line { height: 3px; border-radius: 10px; background: linear-gradient(90deg, #00D084, #00A86B, transparent); }
-    .puretech-line { background: linear-gradient(90deg, #a855f7, #7c3aed, transparent); }
-
-    /* ===== ABOUT FULL WIDTH ===== */
-    .about-full .about-text { max-width: 860px; margin: 0 auto; }
-    .about-vision-box {
-      background: rgba(0,208,132,0.05); border: 1px solid rgba(0,208,132,0.2);
-      border-radius: 20px; padding: 28px 32px; margin: 28px 0;
-    }
-    .about-quote {
-      font-family: var(--font-head); font-size: 20px; font-weight: 700;
-      color: var(--accent-2); border-left: 4px solid var(--accent-1);
-      padding-left: 20px; margin: 16px 0; font-style: italic;
-    }
-    .about-pillars {
-      display: flex; gap: 16px; flex-wrap: wrap; margin: 28px 0;
-    }
-    .pillar-item {
-      display: flex; align-items: center; gap: 10px;
-      background: rgba(0,208,132,0.08); border: 1px solid rgba(0,208,132,0.25);
-      border-radius: 100px; padding: 10px 20px;
-      font-family: var(--font-head); font-weight: 700; font-size: 15px; color: var(--text-main);
-    }
-    .pillar-icon { font-size: 20px; }
-    .about-motto {
-      font-family: var(--font-teko); font-size: 32px; font-weight: 700;
-      color: var(--accent-1); text-shadow: 0 0 20px rgba(0,208,132,0.35);
-      letter-spacing: 2px; text-transform: uppercase; margin: 8px 0 28px;
-    }
-
-    .superior-badge { background: linear-gradient(135deg, #1a0a2e, #2d1054); color: #a855f7; border: 2px solid #a855f7; box-shadow: 0 0 18px rgba(168,85,247,0.3); }
-    .superior-line { background: linear-gradient(90deg, #a855f7, #7c3aed, transparent); }
-    .brand-section-name { font-family: var(--font-head); font-weight: 800; font-size: 22px; color: #021B3A; }
-
-    .product-price { color: #f59e0b; font-size: 12px; font-weight: 700; margin-bottom: 10px; letter-spacing: 0.5px; }
-
-    /* ===== DOWNLOAD BUTTON ===== */
-    .img-download-btn {
-      display: inline-flex; align-items: center; gap: 6px;
-      margin-top: 8px; padding: 6px 14px;
-      background: rgba(0,208,132,0.1); border: 1px solid rgba(0,208,132,0.35);
-      border-radius: 100px; color: var(--accent-1);
-      font-size: 12px; font-weight: 700; letter-spacing: 1px;
-      text-decoration: none; cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .img-download-btn:hover { background: rgba(0,208,132,0.22); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,208,132,0.2); }
-    .puretech-dl { border-color: rgba(168,85,247,0.35); color: #c084fc; background: rgba(168,85,247,0.08); }
-    .puretech-dl:hover { background: rgba(168,85,247,0.18); box-shadow: 0 4px 16px rgba(168,85,247,0.2); }
-    .superior-dl { border-color: rgba(168,85,247,0.35); color: #c084fc; background: rgba(168,85,247,0.08); }
-    .superior-dl:hover { background: rgba(168,85,247,0.18); box-shadow: 0 4px 16px rgba(168,85,247,0.2); }
-
-    /* ===== UNAVAILABLE BADGE ===== */
-    .unavailable-overlay {
-      position: absolute; inset: 0; z-index: 10;
-      background: rgba(10,10,20,0.45); border-radius: 20px;
-      display: flex; align-items: flex-start; justify-content: flex-end;
-      padding: 14px; pointer-events: none;
-    }
-    .unavailable-badge {
-      background: rgba(239,68,68,0.9); color: #fff;
-      font-family: var(--font-head); font-weight: 900; font-size: 11px;
-      letter-spacing: 2px; text-transform: uppercase;
-      padding: 5px 12px; border-radius: 100px;
-      box-shadow: 0 2px 10px rgba(239,68,68,0.4);
-    }
-    .product-card.unavailable { opacity: 0.55; }
-    .product-card.unavailable .btn-outline { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
-    .product-card { position: relative; cursor: pointer; }
-
-    /* ===== PRODUCT DETAIL PANEL ===== */
-    #product-detail-panel {
-      display: none;
-      background: linear-gradient(135deg, rgba(0,208,132,0.06) 0%, rgba(2,15,35,0.85) 100%);
-      border: 1px solid rgba(0,208,132,0.25);
-      border-radius: 24px; padding: 40px; margin-bottom: 48px;
-      position: relative; backdrop-filter: blur(24px);
-      animation: panelIn 0.4s cubic-bezier(0.16,1,0.3,1);
-    }
-    #product-detail-panel.superior-panel {
-      background: linear-gradient(135deg, rgba(168,85,247,0.07) 0%, rgba(2,10,30,0.9) 100%);
-      border-color: rgba(168,85,247,0.25);
-    }
-    @keyframes panelIn { from{opacity:0;transform:translateY(-20px);} to{opacity:1;transform:translateY(0);} }
-    #product-detail-panel.open { display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start; }
-    .pdp-img-wrap {
-      flex: 0 0 220px; min-width: 160px; max-width: 260px;
-      background: rgba(255,255,255,0.04); border-radius: 16px;
-      overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 220px;
-    }
-    .pdp-img-wrap img { width: 100%; height: 100%; object-fit: contain; max-height: 260px; }
-    .pdp-body { flex: 1; min-width: 200px; }
-    .pdp-close {
-      position: absolute; top: 16px; right: 16px;
-      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-      color: var(--text-muted); width: 36px; height: 36px; border-radius: 50%;
-      cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center;
-      transition: all 0.2s;
-    }
-    .pdp-close:hover { background: rgba(255,255,255,0.14); color: #fff; }
-    .pdp-brand-tag { font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: var(--accent-1); margin-bottom: 6px; }
-    .pdp-brand-tag.superior { color: #c084fc; }
-    .pdp-title { font-family: var(--font-teko); font-size: 48px; font-weight: 700; color: #fff; line-height: 1; margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase; }
-    .pdp-sub { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
-    .pdp-desc { font-size: 15px; color: #c8d8e8; line-height: 1.7; margin-bottom: 20px; }
-    .pdp-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-    .pdp-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-    @media(max-width:600px){
-      #product-detail-panel.open { flex-direction: column; }
-      .pdp-img-wrap { max-width: 100%; min-height: 180px; }
-      .pdp-title { font-size: 36px; }
-    }
-
-    /* Brand section hidden for filtering */
-    .brand-section.hidden { display: none; }
-
     @media(max-width:480px) {
       .hero-content h1 { font-size: clamp(40px, 13vw, 64px); }
       .hero-stats { grid-template-columns:1fr 1fr; display:grid; width:100%; }
       .stat-item { padding:15px; background:rgba(255,255,255,0.03); border-radius:15px; }
     }
+	.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+text-decoration:none;
+}
+
+.logo-name{
+
+display:flex;
+
+flex-direction:column;
+
+line-height:1;
+}
+
+.logo-main{
+
+font-family:var(--font-teko);
+
+font-size:42px;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+color:#ffffff;
+
+text-transform:uppercase;
+
+line-height:0.9;
+
+text-shadow:
+0 0 20px rgba(255,255,255,0.15);
+}
+
+.logo-sub{
+
+font-family:var(--font-head);
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:5px;
+
+color:#00D084;
+
+text-transform:uppercase;
+
+margin-top:4px;
+}
   </style>
 </head>
 
@@ -733,10 +642,10 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
 
   <nav id="navbar" class="glass-panel">
     <a href="#home" class="logo">
-      <img src="logo.jpeg" alt="AADYIN PHARMA" class="logo-img-circle">
+      <div class="logo-icon">💊</div>
       <div class="logo-text">
-        <span class="logo-name">AADYIN PHARMA</span>
-        <span class="logo-tagline">Elite Performance</span>
+        <span>AADYIN PHARMA</span>
+        <span>Elite Performance</span>
       </div>
     </a>
     <div class="menu-toggle" id="mobile-menu">
@@ -831,47 +740,8 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
       <p>Premium anabolic compounds and performance ingredients for serious results.</p>
     </div>
 
-    <!-- Product Detail Panel -->
-    <div id="product-detail-panel">
-      <button class="pdp-close" onclick="closeProductDetail()">✕</button>
-      <div class="pdp-img-wrap">
-        <img id="pdp-img" src="" alt="">
-      </div>
-      <div class="pdp-body">
-        <div id="pdp-brand" class="pdp-brand-tag"></div>
-        <div id="pdp-title" class="pdp-title"></div>
-        <div id="pdp-sub" class="pdp-sub"></div>
-        <p id="pdp-desc" class="pdp-desc"></p>
-        <div id="pdp-tags" class="pdp-tags"></div>
-        <div class="pdp-actions">
-          <button class="btn-primary" id="pdp-enquire-btn" onclick="">Enquire Now</button>
-        </div>
-      </div>
-    </div>
+    <div class="product-grid" id="card-container">
 
-    <!-- Brand Filter Tabs -->
-    <div class="brand-tabs" id="brand-tabs">
-      <button class="brand-tab active" onclick="filterBrand('all',this)">🏅 All Products</button>
-      <button class="brand-tab" onclick="filterBrand('ozn',this)">⚡ OZN</button>
-      <button class="brand-tab" onclick="filterBrand('puretech',this)">💊 PureTech</button>
-      <button class="brand-tab" onclick="filterBrand('superior',this)">🧬 Superior Peptide</button>
-    </div>
-
-    <!-- OZN Brand Section -->
-    <div class="brand-section" id="brand-ozn">
-      <div class="brand-header-block">
-        <div class="brand-badge-wrap">
-          <span class="brand-badge ozn-badge">OZN</span>
-          <div>
-            <div class="brand-section-name">OZN Supplements</div>
-            <div class="brand-section-tagline">Premium Gym &amp; Performance Nutrition</div>
-          </div>
-        </div>
-        <div class="brand-divider-line"></div>
-      </div>
-      <div class="product-grid" id="card-container-ozn">
-
-      <!-- OZN 1: Whey Protein -->
       <div class="product-card">
         <div class="product-img-wrap"><img src="images/whey-protein.png" alt="OZN Whey Protein" onerror="this.style.display='none'"></div>
         <div class="product-body">
@@ -1091,6 +961,23 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
           <button class="btn-outline" onclick="openEnquireModal('PureTech TRT')" type="button">Enquire Now</button>
         </div>
       </div>
+
+      </div><!-- end OZN product-grid -->
+    </div><!-- end brand-ozn -->
+
+    <!-- PureTech Brand Section -->
+    <div class="brand-section" id="brand-puretech">
+      <div class="brand-header-block">
+        <div class="brand-badge-wrap">
+          <span class="brand-badge puretech-badge">PureTech</span>
+          <div>
+            <div class="brand-section-name">PureTech Pharma</div>
+            <div class="brand-section-tagline">Elite Pharmaceutical Grade Compounds</div>
+          </div>
+        </div>
+        <div class="brand-divider-line puretech-line"></div>
+      </div>
+      <div class="product-grid" id="card-container-puretech">
 
       <!-- PT 8: Winni-Tech -->
       <div class="product-card">
@@ -1344,349 +1231,7 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
         </div>
       </div>
 
-
-    </div><!-- end PureTech product-grid -->
-    </div><!-- end brand-puretech -->
-
-    <!-- Superior Peptide Brand Section -->
-    <div class="brand-section" id="brand-superior">
-      <div class="brand-header-block">
-        <div class="brand-badge-wrap">
-          <span class="brand-badge superior-badge">Superior Peptide</span>
-          <div>
-            <div class="brand-section-name">Superior Peptide</div>
-            <div class="brand-section-tagline">Research-Grade Peptides &amp; Growth Hormones</div>
-          </div>
-        </div>
-        <div class="brand-divider-line superior-line"></div>
-      </div>
-      <div class="product-grid" id="card-container-superior">
-
-      <!-- SP 1: Adipotide (FTPP) -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/ADIPODITE_Box_2-300x300.png" alt="Adipotide FTPP" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Proapoptotic Peptide · Injectable Research Compound</div>
-          <h3>ADIPOTIDE (FTPP)</h3>
-          <p>Targets and destroys blood vessels supplying white fat cells, causing selective fat cell apoptosis. Research shows rapid weight loss, BMI reduction & improved insulin sensitivity.</p>
-          <div class="product-benefits"><span class="benefit-tag">Fat Loss</span><span class="benefit-tag">Insulin Sensitivity</span><span class="benefit-tag">Anti-Obesity</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide Adipotide FTPP')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 2: AOD -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/AOD-Box-16-scaled.jpg" alt="AOD" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Fragment 176-191 · hGH Fat-Burning Fragment</div>
-          <h3>AOD-9604</h3>
-          <p>Modified hGH fragment that stimulates fat burning and inhibits new fat formation. Boosts metabolism & shifts body toward lean mass maintenance without affecting blood sugar or growth.</p>
-          <div class="product-benefits"><span class="benefit-tag">Fat Burning</span><span class="benefit-tag">Lean Mass</span><span class="benefit-tag">Metabolism</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide AOD-9604')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 3: BPC-157 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/BPC-157-Box-3-scaled.jpg" alt="BPC-157" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Body Protection Compound · Injectable Peptide</div>
-          <h3>BPC-157</h3>
-          <p>Synthetic peptide derived from a protective stomach protein. Researched for regenerative effects on tendons, ligaments, muscles & nerves. Powerful recovery compound.</p>
-          <div class="product-benefits"><span class="benefit-tag">Tissue Repair</span><span class="benefit-tag">Recovery</span><span class="benefit-tag">Anti-Inflammation</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide BPC-157')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 4: BPC-157 + TB-500 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/BPC-157-Box-17-scaled.jpg" alt="BPC-157 + TB-500" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">BPC-157 + TB-500 · Ultimate Recovery Stack</div>
-          <h3>BPC-157 + TB-500</h3>
-          <p>Combines BPC-157 & TB-500 for powerful tissue repair, muscle recovery & inflammation management. Ideal for injury recovery & post-operative healing research.</p>
-          <div class="product-benefits"><span class="benefit-tag">Tissue Repair</span><span class="benefit-tag">Muscle Recovery</span><span class="benefit-tag">Anti-Inflammatory</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide BPC-157 + TB-500')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 5: CJC-1295 DAC -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/CJC-1295-DAC-Box-4-scaled.jpg" alt="CJC-1295 DAC" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">CJC-1295 with DAC · Long-Acting GH Secretagogue</div>
-          <h3>CJC-1295 DAC</h3>
-          <p>Long-acting GH releasing hormone analogue with Drug Affinity Complex. Supports lean muscle development, lipolysis, anti-aging & fat metabolism with extended GH release.</p>
-          <div class="product-benefits"><span class="benefit-tag">GH Release</span><span class="benefit-tag">Lean Muscle</span><span class="benefit-tag">Fat Loss</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide CJC-1295 DAC')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 6: FST-344 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/FST-344-Box-5-scaled.jpg" alt="FST-344" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Follistatin-344 · Myostatin Inhibitor</div>
-          <h3>FST-344</h3>
-          <p>Naturally occurring protein that binds and neutralizes myostatin — the protein that limits muscle growth. Research shows significant increases in muscle mass and strength potential.</p>
-          <div class="product-benefits"><span class="benefit-tag">Muscle Growth</span><span class="benefit-tag">Myostatin Block</span><span class="benefit-tag">Strength</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide FST-344')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 7: GHK-Cu -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2026/02/GHK-Cu-scaled.jpg" alt="GHK-Cu" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Copper Peptide · Regenerative Research Compound</div>
-          <h3>GHK-CU</h3>
-          <p>Copper-binding tripeptide naturally found in human plasma. Studied for skin regeneration, wound healing, anti-aging effects, collagen synthesis & hair follicle stimulation.</p>
-          <div class="product-benefits"><span class="benefit-tag">Regeneration</span><span class="benefit-tag">Collagen</span><span class="benefit-tag">Anti-Aging</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide GHK-Cu')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 8: GHRP-2 + CJC-1295 + IPAMORELIN -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/GHRP-2-Box-18-scaled.jpg" alt="GHRP-2 + CJC-1295 + Ipamorelin" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Triple GH Stack · Synergistic Secretagogue Blend</div>
-          <h3>GHRP-2 + CJC-1295 + IPAMORELIN</h3>
-          <p>Powerful triple peptide stack combining GHRP-2, CJC-1295 & Ipamorelin for maximum GH secretion. Synergistic blend for lean muscle growth, fat loss & anti-aging research.</p>
-          <div class="product-benefits"><span class="benefit-tag">Max GH Release</span><span class="benefit-tag">Lean Muscle</span><span class="benefit-tag">Fat Loss</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide GHRP-2 + CJC-1295 + Ipamorelin')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 9: GHRP-6 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/GHRP-Box-6-scaled.jpg" alt="GHRP-6" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Growth Hormone Releasing Peptide-6 · GH Secretagogue</div>
-          <h3>GHRP-6</h3>
-          <p>Potent GH secretagogue that stimulates hunger and GH release. Widely studied for increasing lean mass, reducing body fat, improving recovery & boosting IGF-1 levels.</p>
-          <div class="product-benefits"><span class="benefit-tag">GH Release</span><span class="benefit-tag">IGF-1</span><span class="benefit-tag">Muscle Mass</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide GHRP-6')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 10: GHRP-6 + MOD GRF + HEXARELIN -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/GHRP-6_Box_11-scaled.jpg" alt="GHRP-6 + MOD GRF + Hexarelin" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Triple GH Blend · GHRP-6 + Mod GRF + Hexarelin</div>
-          <h3>GHRP-6 + MOD GRF + HEXARELIN</h3>
-          <p>Advanced triple peptide stack combining GHRP-6, Mod GRF (1-29) & Hexarelin. Maximizes natural GH pulse amplitude for superior muscle growth, fat loss & recovery.</p>
-          <div class="product-benefits"><span class="benefit-tag">GH Pulse</span><span class="benefit-tag">Recovery</span><span class="benefit-tag">Fat Loss</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide GHRP-6 + MOD GRF + Hexarelin')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 11: GONADORELIN -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/GONADORELIN-Box-9-scaled.jpg" alt="Gonadorelin" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">GnRH Analogue · Hormone Regulation Research</div>
-          <h3>GONADORELIN</h3>
-          <p>Synthetic form of gonadotropin-releasing hormone (GnRH). Studied for its role in stimulating LH & FSH release, supporting testosterone production & hormonal balance during cycles.</p>
-          <div class="product-benefits"><span class="benefit-tag">LH/FSH</span><span class="benefit-tag">Testosterone</span><span class="benefit-tag">Hormonal Balance</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide Gonadorelin')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 12: HGH 191AA -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/HGH-191AA-Box-14-scaled.jpg" alt="HGH 191AA" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Human Growth Hormone · 191 Amino Acid Sequence</div>
-          <h3>HGH 191AA</h3>
-          <p>Recombinant human growth hormone with the full 191 amino acid sequence identical to natural pituitary HGH. Studied for lean muscle, fat metabolism, recovery & anti-aging effects.</p>
-          <div class="product-benefits"><span class="benefit-tag">Lean Muscle</span><span class="benefit-tag">Fat Metabolism</span><span class="benefit-tag">Anti-Aging</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide HGH 191AA')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 13: HGH-FRAG -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/HGH-FRAG-Box-13-scaled.jpg" alt="HGH-FRAG" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">HGH Fragment 176-191 · Fat Loss Peptide</div>
-          <h3>HGH-FRAG</h3>
-          <p>Isolated C-terminal fragment of HGH responsible for its fat-burning effects. Accelerates lipolysis, inhibits lipogenesis & supports lean body mass without the growth-promoting effects of full HGH.</p>
-          <div class="product-benefits"><span class="benefit-tag">Lipolysis</span><span class="benefit-tag">Fat Burning</span><span class="benefit-tag">Lean Mass</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide HGH-FRAG')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 14: HGH FRAG + CJC-1295 + IPAMORELIN -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/HGH-FRAG-CJC-1295-Box-20-scaled.jpg" alt="HGH FRAG + CJC-1295 + Ipamorelin" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Fat Loss + GH Triple Stack</div>
-          <h3>HGH FRAG + CJC-1295 + IPAMORELIN</h3>
-          <p>Elite fat-loss stack combining HGH Fragment 176-191, CJC-1295 & Ipamorelin. Targets fat burning while simultaneously boosting GH secretion for lean muscle preservation.</p>
-          <div class="product-benefits"><span class="benefit-tag">Fat Burning</span><span class="benefit-tag">GH Boost</span><span class="benefit-tag">Lean Preservation</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide HGH FRAG + CJC-1295 + Ipamorelin')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 15: IGF-1 LR3 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/IGF-1-Box-1-scaled.jpg" alt="IGF-1 LR3" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Insulin-like Growth Factor-1 · Long R3 Variant</div>
-          <h3>IGF-1 LR3</h3>
-          <p>Long-chain analogue of IGF-1 with extended half-life. Promotes hyperplasia (new muscle cell growth), enhanced nutrient uptake & accelerated recovery. Extremely anabolic research peptide.</p>
-          <div class="product-benefits"><span class="benefit-tag">Hyperplasia</span><span class="benefit-tag">Anabolic</span><span class="benefit-tag">Recovery</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide IGF-1 LR3')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 16: IPAMORELIN -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/IPAMORELIN-Box-7-scaled.jpg" alt="Ipamorelin" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Selective GH Secretagogue · GHRP</div>
-          <h3>IPAMORELIN</h3>
-          <p>Highly selective growth hormone releasing peptide. Stimulates GH secretion with minimal cortisol & prolactin side effects. Often stacked with CJC-1295 for synergistic GH release.</p>
-          <div class="product-benefits"><span class="benefit-tag">GH Secretagogue</span><span class="benefit-tag">Anti-Aging</span><span class="benefit-tag">Recovery</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide Ipamorelin')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 17: MOD GRF (1-29) -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/MOD-GRF-Box-10-scaled.jpg" alt="MOD GRF 1-29" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Mod GRF 1-29 · CJC-1295 without DAC · Short-Acting</div>
-          <h3>MOD GRF (1-29)</h3>
-          <p>Short half-life for pulsatile GH release research. Ideal paired with GHRP-2, GHRP-6 or Ipamorelin. Used in anti-aging, muscle growth & fat metabolism studies.</p>
-          <div class="product-benefits"><span class="benefit-tag">GH Pulse</span><span class="benefit-tag">Anti-Aging</span><span class="benefit-tag">Muscle Growth</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide MOD GRF 1-29')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 18: MOTS-c -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2026/02/MOTS-c-scaled.jpg" alt="MOTS-c" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Mitochondrial-Derived Peptide · Metabolic Regulator</div>
-          <h3>MOTS-C</h3>
-          <p>Mitochondrial-derived peptide that regulates metabolic homeostasis. Studied for enhancing insulin sensitivity, improving exercise capacity & reducing age-related metabolic decline.</p>
-          <div class="product-benefits"><span class="benefit-tag">Metabolic Health</span><span class="benefit-tag">Insulin Sensitivity</span><span class="benefit-tag">Anti-Aging</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide MOTS-c')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 19: PGCL -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/PGCL-Box-15-scaled.jpg" alt="PGCL" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Pregnenolone Glucuronide · Hormonal Research</div>
-          <h3>PGCL</h3>
-          <p>High-quality peptide for hormonal regulation research. Used in studies on hormonal balance & its implications in various areas of health and performance. Research grade quality.</p>
-          <div class="product-benefits"><span class="benefit-tag">Hormonal Balance</span><span class="benefit-tag">Research Grade</span><span class="benefit-tag">High Purity</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide PGCL')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 20: PT-141 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/PT-141-Box-8-1-scaled.jpg" alt="PT-141" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Bremelanotide · Melanocortin Receptor Agonist</div>
-          <h3>PT-141</h3>
-          <p>Melanocortin receptor agonist researched for sexual dysfunction in both men and women. Acts centrally in the brain to increase sexual arousal and libido without affecting blood pressure.</p>
-          <div class="product-benefits"><span class="benefit-tag">Libido</span><span class="benefit-tag">Sexual Health</span><span class="benefit-tag">Melanocortin</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide PT-141')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 21: Reta Pro -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2026/02/Reta-Pro-scaled.jpg" alt="Reta Pro" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Retatrutide · GLP-1/GIP/Glucagon Triple Agonist</div>
-          <h3>RETA PRO</h3>
-          <p>Next-generation triple receptor agonist targeting GLP-1, GIP & glucagon receptors simultaneously. Studied for superior weight loss outcomes, metabolic improvement & cardiovascular benefits.</p>
-          <div class="product-benefits"><span class="benefit-tag">Weight Loss</span><span class="benefit-tag">Metabolic</span><span class="benefit-tag">Triple Agonist</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide Reta Pro')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 22: TB-500 -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/TB-500-Box-12-scaled.jpg" alt="TB-500" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Thymosin Beta-4 · Research Peptide</div>
-          <h3>TB-500</h3>
-          <p>Accelerates recovery, promotes cell migration & enhances angiogenesis. Key research peptide for injury recovery, chronic inflammation reduction & muscle fibre repair.</p>
-          <div class="product-benefits"><span class="benefit-tag">Recovery</span><span class="benefit-tag">Cell Migration</span><span class="benefit-tag">Angiogenesis</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide TB-500')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      <!-- SP 23: TESAMORELIN + CJC-1295 + IPAMORELIN -->
-      <div class="product-card">
-        <div class="product-img-wrap" style="background:#0a0a14;padding:8px;">
-          <img src="https://superiorpeptide.com/wp-content/uploads/2024/08/TESAMORELIN-Box-19-scaled.jpg" alt="Tesamorelin + CJC-1295 + Ipamorelin" style="object-fit:contain;width:100%;height:100%;" onerror="this.style.display='none'">
-        </div>
-        <div class="product-body">
-          <div class="product-sub">Tesamorelin + CJC-1295 + Ipamorelin · Fat Loss Stack</div>
-          <h3>TESAMORELIN + CJC-1295 + IPAMORELIN</h3>
-          <p>Potent peptide stack for fat loss, muscle definition & enhanced body composition. Tesamorelin targets visceral fat, combined with CJC-1295 & Ipamorelin for synergistic GH release.</p>
-          <div class="product-benefits"><span class="benefit-tag">Visceral Fat</span><span class="benefit-tag">Definition</span><span class="benefit-tag">Body Composition</span></div>
-          <button class="btn-outline" onclick="openEnquireModal('Superior Peptide Tesamorelin + CJC-1295 + Ipamorelin')" type="button">Enquire Now</button>
-        </div>
-      </div>
-
-      </div><!-- end Superior product-grid -->
-    </div><!-- end brand-superior -->
-
+    </div>
   </section>
 
   <div class="section-divider"></div>
@@ -1836,11 +1381,8 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
     <div class="footer-inner">
       <div class="f-brand">
         <a href="#home" class="logo">
-          <img src="logo.jpeg" alt="AADYIN PHARMA" class="logo-img-circle">
-          <div class="logo-text">
-            <span class="logo-name">AADYIN PHARMA</span>
-            <span class="logo-tagline">Elite Performance</span>
-          </div>
+          <div class="logo-icon">💊</div>
+          <div class="logo-text"><span>AADYIN PHARMA</span><span>Elite Performance</span></div>
         </a>
         <p>Premium pharmaceutical-grade gym supplements and performance ingredients for serious athletes across India.</p>
       </div>
@@ -2018,22 +1560,8 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
     if (heroAccent) setInterval(() => { heroAccent.classList.add('glitch-active'); setTimeout(() => heroAccent.classList.remove('glitch-active'), 400); }, 5000);
 
     // ===== MOUSE LIGHT =====
-    document.getElementById('card-container-ozn').onmousemove = e => {
-      for (const card of document.getElementById('card-container-ozn').getElementsByClassName('product-card')) {
-        const r = card.getBoundingClientRect();
-        card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
-        card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
-      }
-    };
-    document.getElementById('card-container-puretech').onmousemove = e => {
-      for (const card of document.getElementById('card-container-puretech').getElementsByClassName('product-card')) {
-        const r = card.getBoundingClientRect();
-        card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
-        card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
-      }
-    };
-    document.getElementById('card-container-superior').onmousemove = e => {
-      for (const card of document.getElementById('card-container-superior').getElementsByClassName('product-card')) {
+    document.getElementById('card-container').onmousemove = e => {
+      for (const card of document.getElementsByClassName('product-card')) {
         const r = card.getBoundingClientRect();
         card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
         card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
@@ -2142,20 +1670,16 @@ font-weight:900;	  /* "PRODUCTS" = green, solid, VISIBLE */
         setTimeout(() => { btn.classList.remove('copied'); lbl.textContent = 'Copy'; }, 2000);
       });
     }
-    // ===== BRAND FILTER =====
-    function filterBrand(brand, btn) {
-      document.querySelectorAll('.brand-tab').forEach(t => t.classList.remove('active'));
-      if (btn) btn.classList.add('active');
-      const ozn = document.getElementById('brand-ozn');
-      const pt  = document.getElementById('brand-puretech');
-      const sp  = document.getElementById('brand-superior');
-      if (brand === 'all') { ozn.classList.remove('hidden'); pt.classList.remove('hidden'); sp.classList.remove('hidden'); }
-      else if (brand === 'ozn') { ozn.classList.remove('hidden'); pt.classList.add('hidden'); sp.classList.add('hidden'); }
-      else if (brand === 'puretech') { ozn.classList.add('hidden'); pt.classList.remove('hidden'); sp.classList.add('hidden'); }
-      else if (brand === 'superior') { ozn.classList.add('hidden'); pt.classList.add('hidden'); sp.classList.remove('hidden'); }
-    }
-
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeEnquireModal(null, true); });
+
+    // Visitor count (after DOM is ready)
+    fetch('https://api.countapi.xyz/hit/aadyinpharma/visits')
+      .then(r => r.json())
+      .then(data => {
+        const el = document.getElementById('visitor-count');
+        if (el && data && typeof data.value !== 'undefined') el.textContent = data.value + '+';
+      })
+      .catch(() => {});
   </script>
 
 </body>
